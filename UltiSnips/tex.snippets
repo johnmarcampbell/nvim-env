@@ -1,0 +1,69 @@
+snippet eq "Create an equation environment"
+\begin{equation}
+$0
+\end{equation}
+endsnippet
+
+snippet paren "Surround in parentheses"
+\left( ${VISUAL}$0 \right)
+endsnippet
+
+snippet lab "Create a label"
+\label{$0}
+endsnippet
+
+snippet u "Insert 'U+U' "
+U+U
+endsnippet
+
+snippet au "Insert 'Au+Au' "
+Au+Au
+endsnippet
+
+snippet q2 "Insert 'q_{2}' "
+q_{2}
+endsnippet
+
+snippet d "Surround in $'s "
+$ ${VISUAL}$1 $ $0
+endsnippet
+
+snippet frac "Insert \frac{}{}"
+\frac{${VISUAL}$1}{$2}
+endsnippet
+
+snippet sq "Insert \sqrt{}"
+\sqrt{${VISUAL}$1}
+endsnippet
+
+snippet la "Insert \label{}"
+\label{${VISUAL}$1}
+endsnippet
+
+snippet re "Insert \ref{}"
+\ref{${VISUAL}$1}
+endsnippet
+
+snippet gr "Insert graphics"
+\begin{figure}
+	\centering
+	\includegraphics{${VISUAL}$1}
+	\caption{$0}
+	\label{fig:$2}
+\end{figure}
+endsnippet
+
+snippet ta "Insert table"
+\begin{table}
+	\centering
+	\begin{tabular}{| c | c |}
+		\hline
+		$0
+
+		\hline
+
+	\end{tabular}
+	\caption{$2}
+	\label{tab:$1}
+\end{table}
+endsnippet

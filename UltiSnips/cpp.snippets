@@ -1,0 +1,29 @@
+snippet csp "Make a space in a cout statement"
+<< " " << 
+endsnippet
+
+snippet c "Make a cout statement"
+cout << ${VISUAL}${1} << endl;
+endsnippet
+
+snippet for "for-loop template"
+for (Int_t ${1:i} = 0; $1 <= ${2}; $1++) {
+    ${VISUAL}${3}
+}
+endsnippet
+
+snippet readF "Open a root file for reading"
+TFile* ${1:file} = new TFile(${2:fileName}, "READ");
+if ($1->IsZombie()) { 
+    cout << "Unable to open " << $2 <<". It is a zombie.\n";
+    exit(-1);
+}
+endsnippet
+
+snippet tsf "Format a TString"
+TString::Format(${1});
+endsnippet
+
+snippet cb "Comment Banner"
+// --- ${VISUAL}${1} --- //
+endsnippet

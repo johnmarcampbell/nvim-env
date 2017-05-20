@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
+Plug 'SirVer/ultisnips'
 call plug#end()
 
 " Plugin-specific settings

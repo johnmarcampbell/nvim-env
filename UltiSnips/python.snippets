@@ -1,0 +1,14 @@
+snippet fdef "Create a function definition"
+def ${1:function_name}(${2:self}):
+    """${3:Docstring}"""
+    $0
+endsnippet
+
+snippet cdef "Create a class definition"
+class ${1:class_name}(${2:arguments}):
+    """${3:Docstring}"""
+
+    def __init__(self):
+        """${4:Docstring}"""
+    $0
+endsnippet
