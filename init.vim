@@ -29,6 +29,8 @@ set undodir=~/.config/nvim/undofiles
 " 02. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+colorscheme monokai 
+
 "Mash 'jk' to leave interactive mode
 inoremap jk <ESC>
 
