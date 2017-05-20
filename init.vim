@@ -9,6 +9,10 @@
 " 01. General                                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+if filereadable(glob('~/.config/nvim/pluginsettings.vim'))
+    source ~/.config/nvim/pluginsettings.vim
+endif
+
 "Remap leader
 let mapleader=","
 
