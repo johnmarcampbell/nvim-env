@@ -97,6 +97,11 @@ nnoremap <LeftMouse> <nop>
 inoremap <LeftMouse> <nop>
 noremap <LeftMouse> <nop>
 
+"Terminal Stuff
+tnoremap jk <C-\><C-n>
+nnoremap <leader>tt :terminal <CR>
+nnoremap <leader>tp :terminal python3 <CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
