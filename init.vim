@@ -9,12 +9,12 @@
 " 01. General                                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"Remap leader
+let mapleader=","
+
 if filereadable(glob('~/.config/nvim/pluginsettings.vim'))
     source ~/.config/nvim/pluginsettings.vim
 endif
-
-"Remap leader
-let mapleader=","
 
 " Add all subdirectories of current directory to path
 set path+=**
@@ -24,21 +24,34 @@ set wildignore+=*.bmp,*.gif,*.jpg,*.ico,*.png,*.swp
 set noswapfile
 set undofile
 set undodir=~/.config/nvim/undofiles
+
+"Tab stuff
+set tabstop=4 "Length of a tab
+set shiftwidth=4 "Auto-indent length
+set softtabstop=4 "Spaces when you hit tab key
+set smartindent
+set expandtab "Change tabs to spaces
 "
+"Mash 'jk' to leave interactive mode
+inoremap jk <ESC>
+
+"Ignores case unless search string is mixed case
+set ignorecase
+set smartcase
+
+set gdefault "make replaces global by default
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 colorscheme monokai 
 
-"Mash 'jk' to leave interactive mode
-inoremap jk <ESC>
-
 set nu rnu "Show relative line numbers
 set hidden
 
 set scrolloff=20
-"
+
 "Split stuff
 nnoremap <C-j> <C-w><C-J>
 nnoremap <C-k> <C-w><C-K>
@@ -47,11 +60,18 @@ nnoremap <C-h> <C-w><C-H>
 set splitbelow
 set splitright
 
-"Turns off arrow keys, to enforce using hjkl
-nnoremap <up> :tabnew <CR> :ls <cr>
-nnoremap <down> :tabclose <cr>
+" Normal mode arrow keys do tab manipulation
+nnoremap <up> :tabnew <CR>
+nnoremap <down> :tabclose <CR>
 nnoremap <left> :tabprev <CR>
 nnoremap <right> :tabnext <CR>
+" <C-arrow keys> do buffer manipulation
+nnoremap <C-up> :e <CR>
+nnoremap <C-down> :bdelete <CR>
+nnoremap <C-left> :bprevious <CR>
+nnoremap <C-right> :bnext <CR>
+
+" Disable arrow keys in other modes
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
@@ -60,11 +80,22 @@ vnoremap <up> <nop>
 vnoremap <down> <nop>
 vnoremap <left> <nop>
 vnoremap <right> <nop>
-"
+
+"Fix regex handling
+nnoremap / /\v
+vnoremap / /\v
+
 "Switch colon and semi-colon
 nnoremap ; :
 nnoremap : ;
 
+"Disable the mouse, except for the scroll wheel
+set mouse=a
+nnoremap <ScrollWheelUp> 3<C-y>
+nnoremap <ScrollWheelDown> 3<C-e>
+nnoremap <LeftMouse> <nop>
+inoremap <LeftMouse> <nop>
+noremap <LeftMouse> <nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Custom Commands                                                        "
