@@ -3,7 +3,7 @@
 "   01. General ................. General Vim behavior                       "
 "   02. Vim UI .................. User interface behavior                    "
 "   03. Custom Commands ......... Any custom command aliases                 "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 01. General                                                                "
@@ -45,7 +45,7 @@ set gdefault "make replaces global by default
 " 02. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-colorscheme monokai 
+colorscheme OceanicNext 
 
 set nu rnu "Show relative line numbers
 set hidden
