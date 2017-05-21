@@ -1,3 +1,7 @@
+"  Source plug.vim explicity - sometimes a given version of nvim has trouble
+"  finding it
+source ~/.config/nvim/autoload/vim-plug/plug.vim
+
 " Install plugins
 call plug#begin()
 Plug 'tpope/vim-fugitive'
