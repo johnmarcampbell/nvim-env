@@ -101,6 +101,7 @@ noremap <LeftMouse> <nop>
 tnoremap jk <C-\><C-n>
 nnoremap <leader>tt :terminal <CR>
 nnoremap <leader>tp :terminal python3 <CR>
+nnoremap <leader>tr :terminal root -l<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Custom Commands                                                        "
