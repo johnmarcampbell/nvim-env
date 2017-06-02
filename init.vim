@@ -134,3 +134,14 @@ nnoremap <Leader>m :make<cr>
 "Insert date/time
 nnoremap <F5> "=strftime("%c")<CR>P
 inoremap <F5> <C-R>=strftime("%c")<CR>
+
+"""Autocmds
+
+" Latex commands
+autocmd BufNewFile,BufRead *.tex set makeprg=pdflatex\ %\ &&\ xdg-open\ %:r.pdf\ &&
+
+" Add two spaces to the end of lines in Markdown files
+au BufWrite *.md %s/\(\S\)\n/\1  \r/e | norm!``
+
+" Ignore virtual environments for python
+au BufNewFile,BufRead *.py set wildignore+=*/env/*
