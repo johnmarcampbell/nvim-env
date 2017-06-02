@@ -9,6 +9,7 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'SirVer/ultisnips'
 Plug 'mhartington/oceanic-next'
+Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
 " Plugin-specific settings
@@ -20,3 +21,9 @@ nnoremap <leader>gd :Gdiff <cr>
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+
+
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources = ['tag']
