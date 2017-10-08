@@ -50,6 +50,8 @@ colorscheme OceanicNext
 set nu rnu "Show relative line numbers
 set hidden
 
+set nohlsearch "Don't highlight search matches
+
 set scrolloff=20
 
 "Split stuff
