@@ -11,6 +11,8 @@ Plug 'SirVer/ultisnips'
 Plug 'mhartington/oceanic-next'
 Plug 'Shougo/deoplete.nvim'
 Plug 'vimwiki/vimwiki'
+Plug 'lervag/vimtex'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 " Plugin-specific settings
