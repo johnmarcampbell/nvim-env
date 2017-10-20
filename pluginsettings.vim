@@ -30,3 +30,9 @@ let g:deoplete#enable_at_startup = 1
 
 " vimwiki
 let g:vimwiki_map_prefix = '<leader>e'
+let g:vimwiki_list = [{
+  \ 'path': '$HOME/vimwiki',
+  \ 'template_path': '$HOME/vimwiki/templates',
+  \ 'template_default': 'default_template',
+  \ 'template_ext': '.html',
+  \ 'css_name': 'css/bootstrap.min.css'}]
