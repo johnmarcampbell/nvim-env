@@ -62,16 +62,16 @@ nnoremap <C-h> <C-w><C-H>
 set splitbelow
 set splitright
 
-" Normal mode arrow keys do tab manipulation
-nnoremap <up> :tabnew <CR>
-nnoremap <down> :tabclose <CR>
-nnoremap <left> :tabprev <CR>
-nnoremap <right> :tabnext <CR>
-" <C-arrow keys> do buffer manipulation
-nnoremap <C-up> :e <CR>
-nnoremap <C-down> :bdelete <CR>
-nnoremap <C-left> :bprevious <CR>
-nnoremap <C-right> :bnext <CR>
+" Normal mode <C-arrow keys> to do tab manipulation
+nnoremap <C-up> :tabnew <CR>
+nnoremap <C-down> :tabclose <CR>
+nnoremap <C-left> :tabprev <CR>
+nnoremap <C-right> :tabnext <CR>
+" Arrow keys do buffer manipulation
+nnoremap <up> :e <CR>
+nnoremap <down> :bdelete <CR>
+nnoremap <left> :bprevious <CR>
+nnoremap <right> :bnext <CR>
 
 " Disable arrow keys in other modes
 inoremap <up> <nop>
